@@ -24,13 +24,14 @@
         <p class="subheading font-weight-regular no-margin">
          ¡Hola! {{ name }} Selecciona el día que quieres agendar tu cita          
         </p>
+        <v-date-picker class="centered"         
+          :landscape="false"         
+          locale="es-mx"
+          v-on:input="calendarChanged()">
+        </v-date-picker>
       </v-flex>    
 
-      <v-date-picker class="centered"         
-        :landscape="false"         
-        locale="es-mx"
-        v-on:input="calendarChanged()">
-      </v-date-picker>
+     
     </v-layout>
   </v-container>
 </template>

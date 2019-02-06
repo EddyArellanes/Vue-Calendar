@@ -82,7 +82,7 @@
         }
       };
         
-      agent.add( new Payload(agent.FACEBOOK, buttonTemplate ));
+      agent.add( new Payload(agent.FACEBOOK, genericTemplate ));
     }
 
  
@@ -103,6 +103,6 @@
     intentMap.set('Default Fallback Intent', fallback);
     intentMap.set('RequestDate', requestDate);
     // intentMap.set('your intent name here', yourFunctionHandler);
-        
+
     agent.handleRequest(intentMap);
   });

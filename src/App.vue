@@ -5,47 +5,54 @@
         <span>EDUS</span>        
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
+      <v-btn        
         flat
         @click="close()"
         target="_blank"
+        v-if="messengerAvailable"
       >
         <span class="mr-2">Salir</span>
       </v-btn>
     </v-toolbar>
 
     <v-content>
-      <HelloWorld :name="name"/>
+      <router-view/>
     </v-content>
      <v-footer class="pa-3" :dark="true">
-      <v-spacer></v-spacer>
-      <div>&copy; Expediente Único Digital de Salud {{ new Date().getFullYear() }}</div>
+      <div class="centered">&copy; Expediente Único Digital de Salud {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+const MessengerExtensions = (MessengerExtensions) ? MessengerExtensions : ''
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
+  name: 'App',  
   data () {
     return {
-      name: ''
+      name: '',
+      messengerAvailable: (MessengerExtensions) ? true : false
     }
   },
   created(){
     let urlParams = new URLSearchParams(window.location.search)
     let name = urlParams.get('name')
-    this.name = (name) ? name : 'Usuario'
+    this.name = (name) ? name : 'Selly'
+    
   },
   methods:{
     close(){
-      MessengerExtensions.requestCloseBrowser()      
+      if(MessengerExtensions){
+        MessengerExtensions.requestCloseBrowser()      
+      }
+      
     }
   }
 }
 </script>
+<style scoped>
+  .centered{
+    margin: 0 auto;
+  }
+</style>

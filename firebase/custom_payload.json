@@ -1,0 +1,54 @@
+{
+  "facebook": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type":"generic",
+        "elements":[
+          {
+            "title":"Caja Costarricense de Seguro Social",
+            "image_url": "https://lh5.googleusercontent.com/p/AF1QipMiy95pzeINKWkovhqc4KmUO-Wg26Q3L0dhSpDu=w408-h306-k-no",
+            "subtitle":"Calle 4 María Eugenia Madrigal, Provincia de Alajuela, Atenas",                
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.google.com.mx/maps/place/Dirección+Regional+de+Servicios+de+Salud+Chorotega/@9.5889176,-84.644843,8.03z/data=!4m8!1m2!2m1!1sCaja+Costarricense+de+Seguro+Social!3m4!1s0x0:0x9afa5d53ff3e5c02!8m2!3d10.6265289!4d-85.4393005",
+                "webview_height_ratio": "full",
+                "messenger_extensions": true,
+                "title":"Ver Mapa"                                      
+              }                
+            ]      
+          },
+          {
+            "title":"Sucursal CCSS San Carlos",
+            "image_url": "https://lh5.googleusercontent.com/p/AF1QipNjk-N5tSDoDV_gbOf67PUyHUVG9cq3RW9v670=w408-h229-k-no",
+            "subtitle":"Provincia de Alajuela, Cd Quesada",                
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.google.com.mx/maps/place/Sucursal+CCSS+San+Carlos/@9.5889176,-84.644843,8.03z/data=!4m8!1m2!2m1!1sCaja+Costarricense+de+Seguro+Social!3m4!1s0x0:0x3decb3d2019e3b23!8m2!3d10.3280922!4d-84.4316483",
+                "webview_height_ratio": "full",
+                "messenger_extensions": true,
+                "title":"Ver Mapa"                                      
+              }
+            ]      
+          },
+          {
+            "title":"Caja Costarricense de Seguro Social",
+            "image_url": "https://lh5.googleusercontent.com/p/AF1QipO8kwuOb9QiTXJNmN1ewFs3BrfVcIEhMu_XnjFs=w408-h393-k-no",
+            "subtitle":"Costado norte del Cementerio de Tres Ríos, 251, Provincia de Cartago, Tres Rios",                
+            "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://www.google.com.mx/maps/place/Caja+Costarricense+de+Seguro+Social/@9.5889176,-84.644843,8.03z/data=!4m8!1m2!2m1!1sCaja+Costarricense+de+Seguro+Social!3m4!1s0x0:0x63e572a797c756b2!8m2!3d9.9089945!4d-83.9911652",
+                "webview_height_ratio": "full",
+                "messenger_extensions": true,
+                "title":"Ver Mapa"                                      
+              }             
+            ]      
+          }
+        ]
+      }
+    }
+  }
+}
