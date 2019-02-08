@@ -1,8 +1,15 @@
 <template>
   <v-app>
     <v-toolbar app>
+      <v-img
+          :src="require('./assets/logo-dued.png')"
+          class="my-3"
+          contain
+          height="50">
+      </v-img>
       <v-toolbar-title class="headline text-uppercase">
         <span>EDUS</span>        
+        
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn        
