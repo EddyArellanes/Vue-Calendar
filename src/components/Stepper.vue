@@ -26,13 +26,13 @@
 
       <v-stepper-content step="2">
         <v-container fluid grid-list-xl>
-          <p>Elige la unidad médica de tu preferencia</p> 
+          <p>Elige el establecimiento de tu preferencia</p> 
           <v-layout wrap align-center>
               <v-flex xs12 sm6 d-flex>
                 <v-select
                   :items="items"
                   box
-                  label="Unidades médicas"
+                  label="Establecimientos"
                 ></v-select>
               </v-flex>
           </v-layout>
@@ -42,7 +42,7 @@
           color="primary"
           @click="e1 = 3"
         >
-          Continue
+          Continuar
         </v-btn>
 
         <v-btn flat @click="e1 = 1">Volver</v-btn>
@@ -50,8 +50,16 @@
 
       <v-stepper-content step="3">
 
-      <Calendar />
-      <v-btn flat @click="e1 = 2">Volver</v-btn>
+      <Calendar :showAlert="finish"/>
+
+      <v-btn flat @click="e1 = 2" v-if="!finish">Volver</v-btn>
+      <v-btn
+          color="primary"
+          @click="showNotify()"
+          v-if="!finish"
+        >
+          Finalizar
+      </v-btn>
       </v-stepper-content>
     </v-stepper-items>
   </v-stepper>
@@ -69,12 +77,21 @@ export default {
   data () {
     return {
       e1: 0,
+      finish: false,
       items: [
-        'Hospital Carlos Luis Valverde Vega', 
-        'Hospital de Osa Tomás Casas Casajús', 
-        'Hospital de San Vito', 
-        'Hospital de San Carlos'
+        'EBAIS AVANCARI', 
+        'EBAIS LA GARITA', 
+        'EBAIS PACTO JOCOTE', 
+        'EBAIS SAN JOSECITO SUR'
       ]
+    }
+  },
+  methods:{
+    showNotify(){
+      this.finish = true
+      setInterval(()=>{
+          this.$router.push('resume')              
+      }, 2000)
     }
   }
 }

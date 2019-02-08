@@ -9,15 +9,28 @@
             contain
             height="50">
           </v-img>
-          <p class="font-weight-regular no-margin center">
-            Hola Selly! este es tu información en la ccss
+          <p class="font-weight-regular no-margin center" v-if="infoReady">
+            Hola Diana! este es tu información en la CCSS
           </p>
+          <p v-else>Para conocer tus datos en la CCSS por favor introduce tu Identificador</p>
+          <v-flex xs12 sm6 md3>
+            <v-text-field
+            label="Identificador"
+            placeholder=""
+            > </v-text-field>
+            <v-btn
+              color="success"
+              @click="showInfo()"              
+            >
+          Buscar
+      </v-btn>
+          </v-flex>
 
         </v-flex>           
       </v-layout>
     </v-container>
 
-    <div id="e3" style="max-width: 400px; margin: auto;" class="grey lighten-3">     
+    <div id="e3" style="max-width: 400px; margin: auto;" class="grey lighten-3" v-if="infoReady">     
       <v-card>
         <v-container fluid grid-list-lg>
           <v-layout row wrap>                  
@@ -27,9 +40,9 @@
                   <v-flex xs7>
                     <v-card-title primary-title>
                       <div>
-                        <div class="headline">Selly</div>
-                        <div>Quezada Méndez</div>
-                        <div>(1994)</div>
+                        <div class="headline">Diana</div>
+                        <div>Méndez Calderon</div>
+                        <div>(1993)</div>
                       </div>
                     </v-card-title>
                   </v-flex>
@@ -61,8 +74,18 @@
 
 export default {
   name: 'home',
+  data () {
+    return {
+      infoReady: false,
+    }
+  },
   components: {
     
+  },
+  methods:{
+    showInfo(){
+      this.infoReady = true
+    }
   }
 }
 </script>

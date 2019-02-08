@@ -1,11 +1,6 @@
 <template>
   <v-container>
-    <v-alert
-      :value="showAlert"
-      :dismissible="true"
-      type="success">
-      ¡Cita agendada con éxito!
-    </v-alert>
+  
     <v-layout text-xs-center wrap>
 
       <v-flex xs12 md6 l6>
@@ -38,19 +33,25 @@
       </v-flex>    
      
     </v-layout>
+    <v-alert
+      :value="showAlert"
+      :dismissible="true"
+      type="success">
+      ¡Cita agendada con éxito!
+    </v-alert>
   </v-container>
 </template>
 <script>
 export default {
   name: 'Calendar',
+  props: {
+    showAlert: Boolean
+  },
   data: () => ({
      showAlert: false
-  }),
+  }), 
   methods:{
-    calendarChanged(){
-        this.showAlert = true
-      }
-    }
+  }
 }
 </script>
 
