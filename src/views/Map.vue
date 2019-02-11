@@ -2,7 +2,7 @@
  <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12> 
-        <iframe :src="locations[indexUrl]" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe :src="locations[indexUrl]" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
       </v-flex>
     </v-layout>
  </v-container>

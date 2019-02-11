@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Stepper from './views/Stepper.vue'
 import Profile from './views/Profile.vue'
 import Timeline from './views/Timeline.vue'
 import Resume from './views/Resume.vue'
 import Map from './views/Map.vue'
+import Schedule from './views/Schedule.vue'
 
 Vue.use(Router)
 
@@ -12,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'stepper',
+      component: Stepper
     },
     {
       path: '/timeline',
@@ -36,6 +37,12 @@ export default new Router({
       path: '/map',
       name: 'map',
       component: Map    
+      
+    },
+    {
+      path: '/schedule',
+      name: 'schedule',
+      component: Schedule    
       
     } 
   ]
