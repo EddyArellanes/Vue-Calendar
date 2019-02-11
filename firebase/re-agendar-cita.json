@@ -1,0 +1,81 @@
+  {
+    "facebook": {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type":"generic",
+          "elements":[
+            {
+              "title":"Establecimiento: EBAIS AVANCARI",
+              "image_url": "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "subtitle":"Fecha: 02/04/2019, Horario: 09:00 a.m",                
+              "buttons": [
+                {
+                  "type": "web_url",
+                  "url": "https://eddyarellanes.github.io/calendar/",                      
+                  "webview_height_ratio": "full",
+                  "messenger_extensions": true,
+                  "title": "Reagendar cita"                
+                },
+                {
+                  "type":"postback",                  
+                  "payload":"CHECK",  
+                  "title": "Eliminar cita"                
+                }
+              ]     
+            },
+            {
+              "title":"Establecimiento: EBAIS CENTRAL 2",
+              "image_url": "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "subtitle":"Fecha: Viernes 08/03/2019, Horario: 01:30 p.m",                
+              "buttons": [
+                {
+                  "type": "web_url",
+                  "url": "https://eddyarellanes.github.io/calendar/",                      
+                  "webview_height_ratio": "full",
+                  "messenger_extensions": true,
+                  "title": "Reagendar cita"                
+                },
+                {
+                  "type":"postback",                  
+                  "payload":"CHECK",  
+                  "title": "Eliminar cita"                
+                }
+              ]        
+            },          
+            {
+              "title":"Establecimiento: EBAIS CRISTO REY",
+              "image_url": "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "subtitle":"",                
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Buscar",
+                  "payload":"REQUEST_LOCATION"                                     
+                }                
+              ]      
+            },          
+            {
+              "title":"Perfil del CCSS",
+              "image_url": "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "subtitle":"Consulta tu información del CSS",                
+              "buttons": [
+                {
+                  "type": "web_url",
+                  "url": "https://eddyarellanes.github.io/calendar/",                      
+                  "webview_height_ratio": "full",
+                  "messenger_extensions": true,
+                  "title": "Reagendar cita"                
+                },
+                {
+                  "type":"postback",                  
+                  "payload":"CHECK",  
+                  "title": "Eliminar cita"                
+                }
+              ]       
+            }           
+          ]
+        }
+      }
+    }
+  }

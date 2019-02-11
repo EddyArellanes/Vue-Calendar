@@ -1,6 +1,5 @@
 <template>
-  <div>  
-    <HelloWorld/>
+  <div>      
     <Stepper />
   </div>
 </template>

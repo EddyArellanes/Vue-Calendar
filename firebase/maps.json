@@ -1,0 +1,54 @@
+{
+  "facebook": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "Sucursal: Agencia Ciudad Cortés",
+            "image_url": "https://www.ccss.sa.cr/images/sucursales/thumb/28.jpg",
+            "subtitle": "Osa, Ciudad Cortés. Frente a la Escuela de Ciudad Cortés",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://goo.gl/maps/EB5Gcw6sEHr?output=embed",
+                "messenger_extensions": "true",
+                "webview_height_ratio": "full",
+                "title": "Ver Mapa"
+              }
+            ]
+          },
+          {
+            "title": "Sucursal Abangares",
+            "image_url": "https://www.ccss.sa.cr/images/sucursales/thumb/10.jpg",
+            "subtitle": "Guanacaste, Abangares, las Juntas 25 Mts Este plaza de futbol",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://goo.gl/maps/wRXa2Pk9fPQ2",
+                "messenger_extensions": "true",
+                "webview_height_ratio": "full",
+                "title": "Ver Mapa"
+              }
+            ]
+          },
+          {
+            "title": "Sucursal Upala",
+            "image_url": "https://www.ccss.sa.cr/images/sucursales/thumb/16.jpg",
+            "subtitle": "Provincia de Alajuela, Upala, Costa Rica",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7835.70633146178!2d-85.02371062757852!3d10.898761754302067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f75498071d060f5%3A0xc33425f52fe8ce6e!2sHospital+Upala!5e0!3m2!1ses-419!2smx!4v1549923003659",
+                "messenger_extensions": "true",
+                "webview_height_ratio": "full",
+                "title": "Ver Mapa"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

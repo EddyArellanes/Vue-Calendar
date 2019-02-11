@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Profile from './views/Profile.vue'
 import Timeline from './views/Timeline.vue'
 import Resume from './views/Resume.vue'
+import Map from './views/Map.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,12 @@ export default new Router({
       name: 'resume',
       component: Resume    
       
-    }    
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: Map    
+      
+    } 
   ]
 })

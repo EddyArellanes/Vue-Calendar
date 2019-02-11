@@ -12,7 +12,7 @@
           <p class="font-weight-regular no-margin center" v-if="infoReady">
             Hola Diana! este es tu información en la CCSS
           </p>
-          <p v-else>Para conocer tus datos en la CCSS por favor introduce tu Identificador</p>
+          <p v-else>Para conocer tus datos en la CCSS por favor introduce tu Cédula</p>
           <v-flex xs12 sm6 md3>
             <v-text-field
             label="Identificador"

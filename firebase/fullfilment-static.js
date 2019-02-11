@@ -34,7 +34,7 @@
               {
                 type: "web_url",
                 url: `https://eddyarellanes.github.io/calendar?name=Usuario`,                      
-                webview_height_ratio: "compact",
+                webview_height_ratio: "full",
                 messenger_extensions: true,
                 title: "Agendar"                
               }
@@ -53,18 +53,18 @@
               {
                 title:"Agendar Cita",
                 image_url: "https://www.en-dependencia.com/wp-content/uploads/2017/05/Cita-medica.jpg",
-                subtitle:"Crea tu cita de forma sencilla"/*,
+                subtitle:"Crea tu cita de forma sencilla",/*,
                 default_action: {
                   type: "web_url",
                   url: "https://eddyarellanes.github.io/calendar/",
                   messenger_extensions: true,
-                  webview_height_ratio: "compact",
-                }*/,
+                  webview_height_ratio: "full",
+                }*/
                 buttons:[
                   {
                     type:"web_url",
                     url:"https://eddyarellanes.github.io/calendar",
-                    webview_height_ratio: "compact",
+                    webview_height_ratio: "full",
                     messenger_extensions: true,
                     title:"Agendar"                                      
                   }
@@ -84,6 +84,15 @@
         
       agent.add( new Payload(agent.FACEBOOK, genericTemplate ));
     }
+    function maps(agent){
+      console.log("Agente de Dialog Flow bebe")
+      console.log(agent)      
+      agent.add(`Prueba test`);      
+      //let mapsURls = [
+        //Comprobar si es navegador o APP :C
+      //]
+      
+    }
 
  
     // function yourFunctionHandler(agent) {
@@ -99,9 +108,11 @@
    
     // Run the proper function handler based on the matched Dialogflow intent name
     let intentMap = new Map();
-    intentMap.set('Default Welcome Intent', welcome);
+    intentMap.set('Default Welcome Intent', maps);
     intentMap.set('Default Fallback Intent', fallback);
     intentMap.set('RequestDate', requestDate);
+    intentMap.set('RequestLocation - custom', maps);
+    
     // intentMap.set('your intent name here', yourFunctionHandler);
 
     agent.handleRequest(intentMap);
