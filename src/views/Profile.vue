@@ -15,7 +15,7 @@
           <p v-else>Para conocer tus datos en la CCSS por favor introduce tu Cédula</p>
           <v-flex xs12 sm6 md3>
             <v-text-field
-            label="Identificador"
+            label="Número de Cédula"
             placeholder=""
             > </v-text-field>
             <v-btn

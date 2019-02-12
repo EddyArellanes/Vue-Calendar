@@ -1,0 +1,64 @@
+{
+  "facebook": {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+          {
+            "title": "📅 Agendar Cita",
+            "image_url": "https://image.freepik.com/foto-gratis/conceptos-citas-medicas_35380-1287.jpg",
+            "subtitle": "Crear tu cita, agenda la hora y selecciona el establecimiento de tu preferencia",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://eddyarellanes.github.io/calendar",
+                "webview_height_ratio": "full",
+                "messenger_extensions": true,
+                "title": "Agendar"
+              }
+            ]
+          },
+          {
+            "title": "📝 Mis Citas",
+            "image_url": "http://vitalis-blog.com/wp-content/uploads/2016/06/vitalis-gestion-citas-medicas.jpg",
+            "subtitle": "Consultar, eliminar y/o reagendar mis citas",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Ver detalle",
+                "payload": "CHECK"
+              }
+            ]
+          },
+          {
+            "title": "🏢 Sucursales",
+            "image_url": "http://logros.presidencia.go.cr/wp-content/uploads/2016/04/CCSS-1.jpg",
+            "subtitle": "Encuentra tu sucursal más cercana",
+            "buttons": [
+              {
+                "type": "postback",
+                "title": "Buscar",
+                "payload": "REQUEST_LOCATION"
+              }
+            ]
+          },
+          {
+            "title": "💁 Perfil del CCSS",
+            "image_url": "https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "subtitle": "Consultar mis datos personales del CCSS (Num. de Cédula, perfil, etc)",
+            "buttons": [
+              {
+                "type": "web_url",
+                "url": "https://eddyarellanes.github.io/calendar/#/profile",
+                "webview_height_ratio": "full",
+                "messenger_extensions": true,
+                "title": "Ver detalle"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

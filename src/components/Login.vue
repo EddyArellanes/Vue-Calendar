@@ -5,7 +5,7 @@
         <v-layout row wrap>               
             <v-flex xs12 ms12 md6 l6>  
               <v-card dark color="primary">
-                <v-card-text class="px-2">Inicia Sesión con tus datos del Seguro Social Costarricense</v-card-text>
+                <v-card-text class="px-2">Inicia Sesión con tus datos del CCSS</v-card-text>
               </v-card>                                                      
             </v-flex>                             
             <v-flex xs12 ms12 md6 l6  >                        
